@@ -5,3 +5,5 @@ date = LocalDate.now();
 System.out.println(date);
 LocalDate dueDate = date.plusDays(30);
 System.out.println(dueDate);
+Flight testFlight1 = new Flight();
+System.out.println(testFlight1);
