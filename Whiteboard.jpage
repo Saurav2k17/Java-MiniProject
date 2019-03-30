@@ -14,3 +14,6 @@ System.out.println(names.contains("Saurav"));
 System.out.println(names.indexOf("Saurav"));
 System.out.println(names.indexOf("Kumar"));
 System.out.println(names.size());
+names.remove(0);
+System.out.println(names.size());
+System.out.println(names.get(0));

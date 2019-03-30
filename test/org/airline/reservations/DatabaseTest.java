@@ -14,7 +14,7 @@ public class DatabaseTest {
 	@Test
 	public void testDatabase() {
 		Database testDB = new Database();
-		assertEquals(0, testDB.getSeats().size());
+		assertEquals(0, testDB.getSeats().size()); // no seats have been added, so size should return 0
 		assertEquals(0, testDB.getFlights().size());
 		assertEquals(0, testDB.getPassengers().size());
 		assertEquals(0, testDB.getTickets().size());
@@ -39,7 +39,7 @@ public class DatabaseTest {
     public void testAddPassenger() {
 	    Database testDB4 = new Database();
 	    testDB4.addPassenger("Mike Kelly");
-	    assertEquals(1, testDB4.getPassengers().size());
+	    assertEquals(1, testDB4.getPassengers().size()); // checking to see if one passenger got added successfully
 	}
 	
 	@Test
@@ -48,7 +48,7 @@ public class DatabaseTest {
 		boolean result1 = testDB6.addPassenger("Mike Kelly");
 		assertEquals(false, result1);
 		boolean result2 = testDB6.addPassenger("Mike Kelly");
-		assertEquals(true, result2);
+		assertEquals(true, result2); // checking for duplicate passenger entry
 	}
 	
 	@Test
